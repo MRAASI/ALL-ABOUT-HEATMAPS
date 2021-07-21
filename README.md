@@ -23,39 +23,31 @@ The magnitudes of values shown through colors are laid out into a matrix of rows
 The goal of Clustered Heatmap is to build associations between both the data points and their features. This type of heatmap implements clustering as part of the process of grouping similar features. Clustered Heatmaps are widely used in biological sciences for studying gene similarities across individuals.
 The order of the rows in Clustered Heatmap is determined by performing hierarchical cluster analysis of the rows. Clustering positions similar rows together on the map. Similarly, the order of the columns is determined.
 ![image](https://user-images.githubusercontent.com/46440771/126457422-577ce7cd-c9d4-4238-bead-d0401a3d02ed.png)
-
- 
-
 #### Correlogram: 
 A correlogram replaces each of the variables on the two axes with numeric variables in the dataset. Each square depicts the relationship between the two intersecting variables, which helps to build descriptive or predictive statistical models.
  ![image](https://user-images.githubusercontent.com/46440771/126457495-302b2702-a5df-4dae-9d43-3c82466b9c76.png)
-
-
 ### Spatial Heatmap: 
 Each square in a Heatmap is assigned a color representation according to the nearby cells’ value. The location of color is according to the magnitude of the value in that particular space. These Heatmaps are data-driven “paint by numbers” canvas overlaid on top of an image. The cells with higher values than other cells are given a hot color, while cells with lower values are assigned a cold color.
-
-## Color schemes
+## 4.Color schemes
 Many different color schemes can illustrate the heat map, with perceptual advantages and disadvantages for each. The color palette choices are more than just aesthetics because the colors in the HeatMap reveal patterns in the data. Good color schemes can enhance pattern discovery, and poor color choices can hide it.
 General principles for using colors in Heatmaps are:
 #### Vary hue to distinguish categories: 
 Vary the elements’ color to represent multiple plot categories. Most people can differentiate between a moderate number of shades. It is best to represent categories using hues.
 #### 
 Vary luminance to represent numbers: Varying brightness helps you see structure in numeric data. In Bivariate distribution, luminance variation enhances discrete or continuous pattern visualization. The luminance color scheme also makes apparent that there are two prominent peaks.
-
-
-## Hands-on Using Seaborn Heatmap
-#### Purpose of Seaborn HeatMap
+## 5.Hands-on Using Seaborn Heatmap
+### Purpose of Seaborn HeatMap
 The seaborn Heatmaps are the grid Heatmaps that can take various types of data and generate heatmaps. The primary purpose of the seaborn heatmap is to show the correlation matrix by data visualization. It helps find the relationship between multiple features and which features are best for Machine Learning model building.
-#### Correlation Matrix
+### Correlation Matrix
 A correlation matrix denotes the correlation coefficients between variables at the same time. A heat map grid can represent these coefficients to build a visual representation of the variables’ dependence. This visualization makes it easy to spot the strong dependencies. A positive correlation indicates a strong dependency, while a negative correlation indicates a strong inverse dependency; a correlation coefficient closer to zero indicates weak dependence.
-##  How to Read a Seaborn Heat map
+## 6. How to Read a Seaborn Heat map
 The heatmap transforms the correlation matrix into color codings. The correlation matrix shows how the variables are correlated to each other on a scale of -1 to 1. 1 being positively correlated and -1 being inversely correlated. As only numerical features can show the correlation, the heatmap cannot visualize categorical features. Strings need to be encoded to be pictured on the Heatmaps.
 
 
-## Heatmap Function
+### Heatmap Function
 seaborn.heatmap(data, *, vmin=None, vmax=None, cmap=None, center=None, robust=False, annot=None, fmt='.2g', annot_kws=None, linewidths=0, linecolor='white', cbar=True, cbar_kws=None, cbar_ax=None, square=False, xticklabels='auto', yticklabels='auto', mask=None, ax=None, **kwargs)
 
-## Create a default Heatmap using Seaborn
+### Create a default Heatmap using Seaborn
 #### Heat map representing Data
 
 sns.heatmap(data)
